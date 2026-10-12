@@ -1,0 +1,11 @@
+set(lupdate_project_file "/home/halidoprime/Documents/QControl/QControl/CMakeLists.txt")
+set(lupdate_translations "/home/halidoprime/Documents/QControl/QControl/QControl_en_US.ts")
+set(lupdate_include_paths "")
+set(lupdate_sources "")
+set(lupdate_subproject_count 1)
+
+set(lupdate_subproject1_source_dir "/home/halidoprime/Documents/QControl/QControl")
+set(lupdate_subproject1_include_paths "/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/QControl_autogen/include;/usr/include/qt6/QtCore;/usr/include/qt6;/usr/lib/qt6/mkspecs/linux-g++;/usr/include/qt6;/usr/include/qt6/QtWidgets;/usr/include/qt6;/usr/include/qt6/QtGui;/usr/include/qt6;/usr/include;/usr/include;/usr/include;/usr/include/qt6/QtCharts;/usr/include/qt6;/usr/include/qt6/QtOpenGL;/usr/include/qt6;/usr/include/qt6/QtOpenGLWidgets;/usr/include/qt6")
+set(lupdate_subproject1_sources "/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/QControl_autogen/mocs_compilation.cpp;main.cpp;mainwindow.cpp;mainwindow.h;mainwindow.ui;servicemanager.cpp;servicemanager.h;firewallmanager.cpp;firewallmanager.h;addruledialog.cpp;addruledialog.h;interfacemanager.cpp;interfacemanager.h;connectionmanager.cpp;connectionmanager.h;localdevicemanager.cpp;localdevicemanager.h;netspeedmonitor.cpp;netspeedmonitor.h;netgraphwidget.cpp;netgraphwidget.h;/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/.qt/rcc/QControl_translations.qrc;/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/QControl_en_US.qm;/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.cpp;/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/QControl_autogen/include/ui_mainwindow.h;/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/QControl_autogen/timestamp;/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/QControl_en_US.qm.rule;/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.cpp.rule;/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/QControl_autogen/timestamp.rule")
+set(lupdate_subproject1_excluded "")
+set(lupdate_subproject1_autogen_dir "/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/QControl_autogen")

@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_QControl_FILE /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/QControl)
+set(__QT_DEPLOY_TARGET_QControl_TYPE EXECUTABLE)
