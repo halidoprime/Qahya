@@ -63,8 +63,8 @@ CMAKE_BINARY_DIR = /home/halidoprime/Documents/QControl/QControl/build/Desktop_D
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/QControl.dir/all
-all: CMakeFiles/QControl_lrelease.dir/all
+all: CMakeFiles/Qahya.dir/all
+all: CMakeFiles/Qahya_lrelease.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,73 +72,73 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/QControl.dir/clean
-clean: CMakeFiles/QControl_lupdate.dir/clean
+clean: CMakeFiles/Qahya.dir/clean
+clean: CMakeFiles/Qahya_lupdate.dir/clean
 clean: CMakeFiles/update_translations.dir/clean
-clean: CMakeFiles/QControl_lrelease.dir/clean
+clean: CMakeFiles/Qahya_lrelease.dir/clean
 clean: CMakeFiles/release_translations.dir/clean
-clean: CMakeFiles/QControl_autogen_timestamp_deps.dir/clean
-clean: CMakeFiles/QControl_autogen.dir/clean
+clean: CMakeFiles/Qahya_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/Qahya_autogen.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/QControl.dir
+# Target rules for target CMakeFiles/Qahya.dir
 
 # All Build rule for target.
-CMakeFiles/QControl.dir/all: CMakeFiles/QControl_autogen_timestamp_deps.dir/all
-CMakeFiles/QControl.dir/all: CMakeFiles/QControl_autogen.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target QControl"
-.PHONY : CMakeFiles/QControl.dir/all
+CMakeFiles/Qahya.dir/all: CMakeFiles/Qahya_autogen_timestamp_deps.dir/all
+CMakeFiles/Qahya.dir/all: CMakeFiles/Qahya_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target Qahya"
+.PHONY : CMakeFiles/Qahya.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/QControl.dir/rule: cmake_check_build_system
+CMakeFiles/Qahya.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/QControl.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Qahya.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles 0
-.PHONY : CMakeFiles/QControl.dir/rule
+.PHONY : CMakeFiles/Qahya.dir/rule
 
 # Convenience name for target.
-QControl: CMakeFiles/QControl.dir/rule
-.PHONY : QControl
+Qahya: CMakeFiles/Qahya.dir/rule
+.PHONY : Qahya
 
 # clean rule for target.
-CMakeFiles/QControl.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/clean
-.PHONY : CMakeFiles/QControl.dir/clean
+CMakeFiles/Qahya.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/clean
+.PHONY : CMakeFiles/Qahya.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/QControl_lupdate.dir
+# Target rules for target CMakeFiles/Qahya_lupdate.dir
 
 # All Build rule for target.
-CMakeFiles/QControl_lupdate.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_lupdate.dir/build.make CMakeFiles/QControl_lupdate.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_lupdate.dir/build.make CMakeFiles/QControl_lupdate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles --progress-num= "Built target QControl_lupdate"
-.PHONY : CMakeFiles/QControl_lupdate.dir/all
+CMakeFiles/Qahya_lupdate.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_lupdate.dir/build.make CMakeFiles/Qahya_lupdate.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_lupdate.dir/build.make CMakeFiles/Qahya_lupdate.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles --progress-num= "Built target Qahya_lupdate"
+.PHONY : CMakeFiles/Qahya_lupdate.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/QControl_lupdate.dir/rule: cmake_check_build_system
+CMakeFiles/Qahya_lupdate.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/QControl_lupdate.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Qahya_lupdate.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles 0
-.PHONY : CMakeFiles/QControl_lupdate.dir/rule
+.PHONY : CMakeFiles/Qahya_lupdate.dir/rule
 
 # Convenience name for target.
-QControl_lupdate: CMakeFiles/QControl_lupdate.dir/rule
-.PHONY : QControl_lupdate
+Qahya_lupdate: CMakeFiles/Qahya_lupdate.dir/rule
+.PHONY : Qahya_lupdate
 
 # clean rule for target.
-CMakeFiles/QControl_lupdate.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_lupdate.dir/build.make CMakeFiles/QControl_lupdate.dir/clean
-.PHONY : CMakeFiles/QControl_lupdate.dir/clean
+CMakeFiles/Qahya_lupdate.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_lupdate.dir/build.make CMakeFiles/Qahya_lupdate.dir/clean
+.PHONY : CMakeFiles/Qahya_lupdate.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/update_translations.dir
 
 # All Build rule for target.
-CMakeFiles/update_translations.dir/all: CMakeFiles/QControl_lupdate.dir/all
+CMakeFiles/update_translations.dir/all: CMakeFiles/Qahya_lupdate.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/update_translations.dir/build.make CMakeFiles/update_translations.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/update_translations.dir/build.make CMakeFiles/update_translations.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles --progress-num= "Built target update_translations"
@@ -161,36 +161,36 @@ CMakeFiles/update_translations.dir/clean:
 .PHONY : CMakeFiles/update_translations.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/QControl_lrelease.dir
+# Target rules for target CMakeFiles/Qahya_lrelease.dir
 
 # All Build rule for target.
-CMakeFiles/QControl_lrelease.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_lrelease.dir/build.make CMakeFiles/QControl_lrelease.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_lrelease.dir/build.make CMakeFiles/QControl_lrelease.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles --progress-num=17 "Built target QControl_lrelease"
-.PHONY : CMakeFiles/QControl_lrelease.dir/all
+CMakeFiles/Qahya_lrelease.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_lrelease.dir/build.make CMakeFiles/Qahya_lrelease.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_lrelease.dir/build.make CMakeFiles/Qahya_lrelease.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles --progress-num=17 "Built target Qahya_lrelease"
+.PHONY : CMakeFiles/Qahya_lrelease.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/QControl_lrelease.dir/rule: cmake_check_build_system
+CMakeFiles/Qahya_lrelease.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/QControl_lrelease.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Qahya_lrelease.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles 0
-.PHONY : CMakeFiles/QControl_lrelease.dir/rule
+.PHONY : CMakeFiles/Qahya_lrelease.dir/rule
 
 # Convenience name for target.
-QControl_lrelease: CMakeFiles/QControl_lrelease.dir/rule
-.PHONY : QControl_lrelease
+Qahya_lrelease: CMakeFiles/Qahya_lrelease.dir/rule
+.PHONY : Qahya_lrelease
 
 # clean rule for target.
-CMakeFiles/QControl_lrelease.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_lrelease.dir/build.make CMakeFiles/QControl_lrelease.dir/clean
-.PHONY : CMakeFiles/QControl_lrelease.dir/clean
+CMakeFiles/Qahya_lrelease.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_lrelease.dir/build.make CMakeFiles/Qahya_lrelease.dir/clean
+.PHONY : CMakeFiles/Qahya_lrelease.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/release_translations.dir
 
 # All Build rule for target.
-CMakeFiles/release_translations.dir/all: CMakeFiles/QControl_lrelease.dir/all
+CMakeFiles/release_translations.dir/all: CMakeFiles/Qahya_lrelease.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_translations.dir/build.make CMakeFiles/release_translations.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/release_translations.dir/build.make CMakeFiles/release_translations.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles --progress-num= "Built target release_translations"
@@ -213,56 +213,56 @@ CMakeFiles/release_translations.dir/clean:
 .PHONY : CMakeFiles/release_translations.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/QControl_autogen_timestamp_deps.dir
+# Target rules for target CMakeFiles/Qahya_autogen_timestamp_deps.dir
 
 # All Build rule for target.
-CMakeFiles/QControl_autogen_timestamp_deps.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_autogen_timestamp_deps.dir/build.make CMakeFiles/QControl_autogen_timestamp_deps.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_autogen_timestamp_deps.dir/build.make CMakeFiles/QControl_autogen_timestamp_deps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles --progress-num= "Built target QControl_autogen_timestamp_deps"
-.PHONY : CMakeFiles/QControl_autogen_timestamp_deps.dir/all
+CMakeFiles/Qahya_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_autogen_timestamp_deps.dir/build.make CMakeFiles/Qahya_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_autogen_timestamp_deps.dir/build.make CMakeFiles/Qahya_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles --progress-num= "Built target Qahya_autogen_timestamp_deps"
+.PHONY : CMakeFiles/Qahya_autogen_timestamp_deps.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/QControl_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+CMakeFiles/Qahya_autogen_timestamp_deps.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles 0
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/QControl_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Qahya_autogen_timestamp_deps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles 0
-.PHONY : CMakeFiles/QControl_autogen_timestamp_deps.dir/rule
+.PHONY : CMakeFiles/Qahya_autogen_timestamp_deps.dir/rule
 
 # Convenience name for target.
-QControl_autogen_timestamp_deps: CMakeFiles/QControl_autogen_timestamp_deps.dir/rule
-.PHONY : QControl_autogen_timestamp_deps
+Qahya_autogen_timestamp_deps: CMakeFiles/Qahya_autogen_timestamp_deps.dir/rule
+.PHONY : Qahya_autogen_timestamp_deps
 
 # clean rule for target.
-CMakeFiles/QControl_autogen_timestamp_deps.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_autogen_timestamp_deps.dir/build.make CMakeFiles/QControl_autogen_timestamp_deps.dir/clean
-.PHONY : CMakeFiles/QControl_autogen_timestamp_deps.dir/clean
+CMakeFiles/Qahya_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_autogen_timestamp_deps.dir/build.make CMakeFiles/Qahya_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/Qahya_autogen_timestamp_deps.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/QControl_autogen.dir
+# Target rules for target CMakeFiles/Qahya_autogen.dir
 
 # All Build rule for target.
-CMakeFiles/QControl_autogen.dir/all: CMakeFiles/QControl_autogen_timestamp_deps.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_autogen.dir/build.make CMakeFiles/QControl_autogen.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_autogen.dir/build.make CMakeFiles/QControl_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles --progress-num=16 "Built target QControl_autogen"
-.PHONY : CMakeFiles/QControl_autogen.dir/all
+CMakeFiles/Qahya_autogen.dir/all: CMakeFiles/Qahya_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_autogen.dir/build.make CMakeFiles/Qahya_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_autogen.dir/build.make CMakeFiles/Qahya_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles --progress-num=16 "Built target Qahya_autogen"
+.PHONY : CMakeFiles/Qahya_autogen.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/QControl_autogen.dir/rule: cmake_check_build_system
+CMakeFiles/Qahya_autogen.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles 1
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/QControl_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Qahya_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles 0
-.PHONY : CMakeFiles/QControl_autogen.dir/rule
+.PHONY : CMakeFiles/Qahya_autogen.dir/rule
 
 # Convenience name for target.
-QControl_autogen: CMakeFiles/QControl_autogen.dir/rule
-.PHONY : QControl_autogen
+Qahya_autogen: CMakeFiles/Qahya_autogen.dir/rule
+.PHONY : Qahya_autogen
 
 # clean rule for target.
-CMakeFiles/QControl_autogen.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_autogen.dir/build.make CMakeFiles/QControl_autogen.dir/clean
-.PHONY : CMakeFiles/QControl_autogen.dir/clean
+CMakeFiles/Qahya_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_autogen.dir/build.make CMakeFiles/Qahya_autogen.dir/clean
+.PHONY : CMakeFiles/Qahya_autogen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

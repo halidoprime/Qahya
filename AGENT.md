@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-QControl is a GUI application for controlling Linux services (systemctl, ufw, etc.).
+Qahya is a GUI application for controlling Linux services (systemctl, ufw, etc.).
 It is developed with C++ and Qt. 
 
 ## Project Rules
@@ -23,7 +23,7 @@ It is developed with C++ and Qt.
 
 - CMake (minimum 3.19), Qt6 (>= 6.5) with Core, Widgets, and LinguistTools components
 - Build directory: `build/` (out-of-source builds only)
-- Translation file: `QControl_en_US.ts` (updated via `qt_add_translations`)
+- Translation file: `Qahya_en_US.ts` (updated via `qt_add_translations`)
 
 ## Important Notes
 

@@ -1,7 +1,7 @@
-/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/QControl.dir
-/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/QControl_lupdate.dir
+/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/Qahya.dir
+/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/Qahya_lupdate.dir
 /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/update_translations.dir
-/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/QControl_lrelease.dir
+/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/Qahya_lrelease.dir
 /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/release_translations.dir
 /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/edit_cache.dir
 /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/rebuild_cache.dir
@@ -9,5 +9,5 @@
 /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/install.dir
 /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/install/local.dir
 /home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/install/strip.dir
-/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/QControl_autogen_timestamp_deps.dir
-/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/QControl_autogen.dir
+/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/Qahya_autogen_timestamp_deps.dir
+/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/CMakeFiles/Qahya_autogen.dir

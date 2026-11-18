@@ -241,11 +241,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/lib/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargets-relwithdebinfo.cmake"
   "/usr/lib/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargets.cmake"
   "/usr/lib/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargetsPrecheck.cmake"
-  "/usr/lib/cmake/Qt6Gui/Qt6QJp2PluginAdditionalTargetInfo.cmake"
-  "/usr/lib/cmake/Qt6Gui/Qt6QJp2PluginConfig.cmake"
-  "/usr/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets-relwithdebinfo.cmake"
-  "/usr/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets.cmake"
-  "/usr/lib/cmake/Qt6Gui/Qt6QJp2PluginTargetsPrecheck.cmake"
   "/usr/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake"
   "/usr/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake"
   "/usr/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake"
@@ -271,11 +266,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake"
   "/usr/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake"
   "/usr/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargetsPrecheck.cmake"
-  "/usr/lib/cmake/Qt6Gui/Qt6QMngPluginAdditionalTargetInfo.cmake"
-  "/usr/lib/cmake/Qt6Gui/Qt6QMngPluginConfig.cmake"
-  "/usr/lib/cmake/Qt6Gui/Qt6QMngPluginTargets-relwithdebinfo.cmake"
-  "/usr/lib/cmake/Qt6Gui/Qt6QMngPluginTargets.cmake"
-  "/usr/lib/cmake/Qt6Gui/Qt6QMngPluginTargetsPrecheck.cmake"
   "/usr/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake"
   "/usr/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake"
   "/usr/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake"
@@ -483,22 +473,22 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  ".qt/rcc/QControl_translations.qrc"
-  "CMakeFiles/QControl_autogen.dir/AutogenInfo.json"
+  ".qt/rcc/Qahya_translations.qrc"
+  "CMakeFiles/Qahya_autogen.dir/AutogenInfo.json"
   ".qt/QtDeploySupport.cmake"
-  ".qt/deploy_QControl_6fae739a9d.cmake"
+  ".qt/deploy_Qahya_fe39e843df.cmake"
   ".qt/QtDeployTargets.cmake"
-  ".lupdate/QControl_lupdate_project.cmake"
+  ".lupdate/Qahya_lupdate_project.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/QControl.dir/DependInfo.cmake"
-  "CMakeFiles/QControl_lupdate.dir/DependInfo.cmake"
+  "CMakeFiles/Qahya.dir/DependInfo.cmake"
+  "CMakeFiles/Qahya_lupdate.dir/DependInfo.cmake"
   "CMakeFiles/update_translations.dir/DependInfo.cmake"
-  "CMakeFiles/QControl_lrelease.dir/DependInfo.cmake"
+  "CMakeFiles/Qahya_lrelease.dir/DependInfo.cmake"
   "CMakeFiles/release_translations.dir/DependInfo.cmake"
-  "CMakeFiles/QControl_autogen_timestamp_deps.dir/DependInfo.cmake"
-  "CMakeFiles/QControl_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/Qahya_autogen_timestamp_deps.dir/DependInfo.cmake"
+  "CMakeFiles/Qahya_autogen.dir/DependInfo.cmake"
   )

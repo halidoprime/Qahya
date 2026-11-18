@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.19)
-project(QControl LANGUAGES CXX)
+project(Qahya LANGUAGES CXX)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets LinguistTools Charts)
 
 qt_standard_project_setup()
 
-qt_add_executable(QControl
+qt_add_executable(Qahya
     WIN32 MACOSX_BUNDLE
     main.cpp
     mainwindow.cpp
@@ -30,25 +30,25 @@ qt_add_executable(QControl
 )
 
 qt_add_translations(
-    TARGETS QControl
-    TS_FILES QControl_en_US.ts
+    TARGETS Qahya
+    TS_FILES Qahya_en_US.ts
 )
 
-target_link_libraries(QControl
+target_link_libraries(Qahya
     PRIVATE
         Qt::Core
         Qt::Widgets
         Qt::Charts
 )
 
-install(TARGETS QControl
+install(TARGETS Qahya
     BUNDLE  DESTINATION .
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
 )
 
 qt_generate_deploy_app_script(
-    TARGET QControl
+    TARGET Qahya
     OUTPUT_SCRIPT deploy_script
     NO_UNSUPPORTED_PLATFORM_ERROR
 )

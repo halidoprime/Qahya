@@ -162,30 +162,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named QControl
+# Target rules for targets named Qahya
 
 # Build rule for target.
-QControl: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QControl
-.PHONY : QControl
+Qahya: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Qahya
+.PHONY : Qahya
 
 # fast build rule for target.
-QControl/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/build
-.PHONY : QControl/fast
+Qahya/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/build
+.PHONY : Qahya/fast
 
 #=============================================================================
-# Target rules for targets named QControl_lupdate
+# Target rules for targets named Qahya_lupdate
 
 # Build rule for target.
-QControl_lupdate: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QControl_lupdate
-.PHONY : QControl_lupdate
+Qahya_lupdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Qahya_lupdate
+.PHONY : Qahya_lupdate
 
 # fast build rule for target.
-QControl_lupdate/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_lupdate.dir/build.make CMakeFiles/QControl_lupdate.dir/build
-.PHONY : QControl_lupdate/fast
+Qahya_lupdate/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_lupdate.dir/build.make CMakeFiles/Qahya_lupdate.dir/build
+.PHONY : Qahya_lupdate/fast
 
 #=============================================================================
 # Target rules for targets named update_translations
@@ -201,17 +201,17 @@ update_translations/fast:
 .PHONY : update_translations/fast
 
 #=============================================================================
-# Target rules for targets named QControl_lrelease
+# Target rules for targets named Qahya_lrelease
 
 # Build rule for target.
-QControl_lrelease: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QControl_lrelease
-.PHONY : QControl_lrelease
+Qahya_lrelease: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Qahya_lrelease
+.PHONY : Qahya_lrelease
 
 # fast build rule for target.
-QControl_lrelease/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_lrelease.dir/build.make CMakeFiles/QControl_lrelease.dir/build
-.PHONY : QControl_lrelease/fast
+Qahya_lrelease/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_lrelease.dir/build.make CMakeFiles/Qahya_lrelease.dir/build
+.PHONY : Qahya_lrelease/fast
 
 #=============================================================================
 # Target rules for targets named release_translations
@@ -227,61 +227,61 @@ release_translations/fast:
 .PHONY : release_translations/fast
 
 #=============================================================================
-# Target rules for targets named QControl_autogen_timestamp_deps
+# Target rules for targets named Qahya_autogen_timestamp_deps
 
 # Build rule for target.
-QControl_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QControl_autogen_timestamp_deps
-.PHONY : QControl_autogen_timestamp_deps
+Qahya_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Qahya_autogen_timestamp_deps
+.PHONY : Qahya_autogen_timestamp_deps
 
 # fast build rule for target.
-QControl_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_autogen_timestamp_deps.dir/build.make CMakeFiles/QControl_autogen_timestamp_deps.dir/build
-.PHONY : QControl_autogen_timestamp_deps/fast
+Qahya_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_autogen_timestamp_deps.dir/build.make CMakeFiles/Qahya_autogen_timestamp_deps.dir/build
+.PHONY : Qahya_autogen_timestamp_deps/fast
 
 #=============================================================================
-# Target rules for targets named QControl_autogen
+# Target rules for targets named Qahya_autogen
 
 # Build rule for target.
-QControl_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QControl_autogen
-.PHONY : QControl_autogen
+Qahya_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Qahya_autogen
+.PHONY : Qahya_autogen
 
 # fast build rule for target.
-QControl_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl_autogen.dir/build.make CMakeFiles/QControl_autogen.dir/build
-.PHONY : QControl_autogen/fast
+Qahya_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya_autogen.dir/build.make CMakeFiles/Qahya_autogen.dir/build
+.PHONY : Qahya_autogen/fast
 
-QControl_autogen/mocs_compilation.o: QControl_autogen/mocs_compilation.cpp.o
-.PHONY : QControl_autogen/mocs_compilation.o
+Qahya_autogen/mocs_compilation.o: Qahya_autogen/mocs_compilation.cpp.o
+.PHONY : Qahya_autogen/mocs_compilation.o
 
 # target to build an object file
-QControl_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/QControl_autogen/mocs_compilation.cpp.o
-.PHONY : QControl_autogen/mocs_compilation.cpp.o
+Qahya_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/Qahya_autogen/mocs_compilation.cpp.o
+.PHONY : Qahya_autogen/mocs_compilation.cpp.o
 
-QControl_autogen/mocs_compilation.i: QControl_autogen/mocs_compilation.cpp.i
-.PHONY : QControl_autogen/mocs_compilation.i
+Qahya_autogen/mocs_compilation.i: Qahya_autogen/mocs_compilation.cpp.i
+.PHONY : Qahya_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-QControl_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/QControl_autogen/mocs_compilation.cpp.i
-.PHONY : QControl_autogen/mocs_compilation.cpp.i
+Qahya_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/Qahya_autogen/mocs_compilation.cpp.i
+.PHONY : Qahya_autogen/mocs_compilation.cpp.i
 
-QControl_autogen/mocs_compilation.s: QControl_autogen/mocs_compilation.cpp.s
-.PHONY : QControl_autogen/mocs_compilation.s
+Qahya_autogen/mocs_compilation.s: Qahya_autogen/mocs_compilation.cpp.s
+.PHONY : Qahya_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-QControl_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/QControl_autogen/mocs_compilation.cpp.s
-.PHONY : QControl_autogen/mocs_compilation.cpp.s
+Qahya_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/Qahya_autogen/mocs_compilation.cpp.s
+.PHONY : Qahya_autogen/mocs_compilation.cpp.s
 
 addruledialog.o: addruledialog.cpp.o
 .PHONY : addruledialog.o
 
 # target to build an object file
 addruledialog.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/addruledialog.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/addruledialog.cpp.o
 .PHONY : addruledialog.cpp.o
 
 addruledialog.i: addruledialog.cpp.i
@@ -289,7 +289,7 @@ addruledialog.i: addruledialog.cpp.i
 
 # target to preprocess a source file
 addruledialog.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/addruledialog.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/addruledialog.cpp.i
 .PHONY : addruledialog.cpp.i
 
 addruledialog.s: addruledialog.cpp.s
@@ -297,39 +297,39 @@ addruledialog.s: addruledialog.cpp.s
 
 # target to generate assembly for a file
 addruledialog.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/addruledialog.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/addruledialog.cpp.s
 .PHONY : addruledialog.cpp.s
 
-build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.o: build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.cpp.o
-.PHONY : build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.o
+build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.o: build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.cpp.o
+.PHONY : build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.o
 
 # target to build an object file
-build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.cpp.o
-.PHONY : build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.cpp.o
+build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.cpp.o
+.PHONY : build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.cpp.o
 
-build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.i: build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.cpp.i
-.PHONY : build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.i
+build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.i: build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.cpp.i
+.PHONY : build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.i
 
 # target to preprocess a source file
-build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.cpp.i
-.PHONY : build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.cpp.i
+build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.cpp.i
+.PHONY : build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.cpp.i
 
-build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.s: build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.cpp.s
-.PHONY : build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.s
+build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.s: build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.cpp.s
+.PHONY : build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.s
 
 # target to generate assembly for a file
-build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.cpp.s
-.PHONY : build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.cpp.s
+build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.cpp.s
+.PHONY : build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.cpp.s
 
 connectionmanager.o: connectionmanager.cpp.o
 .PHONY : connectionmanager.o
 
 # target to build an object file
 connectionmanager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/connectionmanager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/connectionmanager.cpp.o
 .PHONY : connectionmanager.cpp.o
 
 connectionmanager.i: connectionmanager.cpp.i
@@ -337,7 +337,7 @@ connectionmanager.i: connectionmanager.cpp.i
 
 # target to preprocess a source file
 connectionmanager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/connectionmanager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/connectionmanager.cpp.i
 .PHONY : connectionmanager.cpp.i
 
 connectionmanager.s: connectionmanager.cpp.s
@@ -345,7 +345,7 @@ connectionmanager.s: connectionmanager.cpp.s
 
 # target to generate assembly for a file
 connectionmanager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/connectionmanager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/connectionmanager.cpp.s
 .PHONY : connectionmanager.cpp.s
 
 firewallmanager.o: firewallmanager.cpp.o
@@ -353,7 +353,7 @@ firewallmanager.o: firewallmanager.cpp.o
 
 # target to build an object file
 firewallmanager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/firewallmanager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/firewallmanager.cpp.o
 .PHONY : firewallmanager.cpp.o
 
 firewallmanager.i: firewallmanager.cpp.i
@@ -361,7 +361,7 @@ firewallmanager.i: firewallmanager.cpp.i
 
 # target to preprocess a source file
 firewallmanager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/firewallmanager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/firewallmanager.cpp.i
 .PHONY : firewallmanager.cpp.i
 
 firewallmanager.s: firewallmanager.cpp.s
@@ -369,7 +369,7 @@ firewallmanager.s: firewallmanager.cpp.s
 
 # target to generate assembly for a file
 firewallmanager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/firewallmanager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/firewallmanager.cpp.s
 .PHONY : firewallmanager.cpp.s
 
 interfacemanager.o: interfacemanager.cpp.o
@@ -377,7 +377,7 @@ interfacemanager.o: interfacemanager.cpp.o
 
 # target to build an object file
 interfacemanager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/interfacemanager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/interfacemanager.cpp.o
 .PHONY : interfacemanager.cpp.o
 
 interfacemanager.i: interfacemanager.cpp.i
@@ -385,7 +385,7 @@ interfacemanager.i: interfacemanager.cpp.i
 
 # target to preprocess a source file
 interfacemanager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/interfacemanager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/interfacemanager.cpp.i
 .PHONY : interfacemanager.cpp.i
 
 interfacemanager.s: interfacemanager.cpp.s
@@ -393,7 +393,7 @@ interfacemanager.s: interfacemanager.cpp.s
 
 # target to generate assembly for a file
 interfacemanager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/interfacemanager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/interfacemanager.cpp.s
 .PHONY : interfacemanager.cpp.s
 
 localdevicemanager.o: localdevicemanager.cpp.o
@@ -401,7 +401,7 @@ localdevicemanager.o: localdevicemanager.cpp.o
 
 # target to build an object file
 localdevicemanager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/localdevicemanager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/localdevicemanager.cpp.o
 .PHONY : localdevicemanager.cpp.o
 
 localdevicemanager.i: localdevicemanager.cpp.i
@@ -409,7 +409,7 @@ localdevicemanager.i: localdevicemanager.cpp.i
 
 # target to preprocess a source file
 localdevicemanager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/localdevicemanager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/localdevicemanager.cpp.i
 .PHONY : localdevicemanager.cpp.i
 
 localdevicemanager.s: localdevicemanager.cpp.s
@@ -417,7 +417,7 @@ localdevicemanager.s: localdevicemanager.cpp.s
 
 # target to generate assembly for a file
 localdevicemanager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/localdevicemanager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/localdevicemanager.cpp.s
 .PHONY : localdevicemanager.cpp.s
 
 main.o: main.cpp.o
@@ -425,7 +425,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -433,7 +433,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -441,7 +441,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 mainwindow.o: mainwindow.cpp.o
@@ -449,7 +449,7 @@ mainwindow.o: mainwindow.cpp.o
 
 # target to build an object file
 mainwindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/mainwindow.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/mainwindow.cpp.o
 .PHONY : mainwindow.cpp.o
 
 mainwindow.i: mainwindow.cpp.i
@@ -457,7 +457,7 @@ mainwindow.i: mainwindow.cpp.i
 
 # target to preprocess a source file
 mainwindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/mainwindow.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/mainwindow.cpp.i
 .PHONY : mainwindow.cpp.i
 
 mainwindow.s: mainwindow.cpp.s
@@ -465,7 +465,7 @@ mainwindow.s: mainwindow.cpp.s
 
 # target to generate assembly for a file
 mainwindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/mainwindow.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
 netgraphwidget.o: netgraphwidget.cpp.o
@@ -473,7 +473,7 @@ netgraphwidget.o: netgraphwidget.cpp.o
 
 # target to build an object file
 netgraphwidget.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/netgraphwidget.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/netgraphwidget.cpp.o
 .PHONY : netgraphwidget.cpp.o
 
 netgraphwidget.i: netgraphwidget.cpp.i
@@ -481,7 +481,7 @@ netgraphwidget.i: netgraphwidget.cpp.i
 
 # target to preprocess a source file
 netgraphwidget.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/netgraphwidget.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/netgraphwidget.cpp.i
 .PHONY : netgraphwidget.cpp.i
 
 netgraphwidget.s: netgraphwidget.cpp.s
@@ -489,7 +489,7 @@ netgraphwidget.s: netgraphwidget.cpp.s
 
 # target to generate assembly for a file
 netgraphwidget.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/netgraphwidget.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/netgraphwidget.cpp.s
 .PHONY : netgraphwidget.cpp.s
 
 netspeedmonitor.o: netspeedmonitor.cpp.o
@@ -497,7 +497,7 @@ netspeedmonitor.o: netspeedmonitor.cpp.o
 
 # target to build an object file
 netspeedmonitor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/netspeedmonitor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/netspeedmonitor.cpp.o
 .PHONY : netspeedmonitor.cpp.o
 
 netspeedmonitor.i: netspeedmonitor.cpp.i
@@ -505,7 +505,7 @@ netspeedmonitor.i: netspeedmonitor.cpp.i
 
 # target to preprocess a source file
 netspeedmonitor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/netspeedmonitor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/netspeedmonitor.cpp.i
 .PHONY : netspeedmonitor.cpp.i
 
 netspeedmonitor.s: netspeedmonitor.cpp.s
@@ -513,7 +513,7 @@ netspeedmonitor.s: netspeedmonitor.cpp.s
 
 # target to generate assembly for a file
 netspeedmonitor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/netspeedmonitor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/netspeedmonitor.cpp.s
 .PHONY : netspeedmonitor.cpp.s
 
 servicemanager.o: servicemanager.cpp.o
@@ -521,7 +521,7 @@ servicemanager.o: servicemanager.cpp.o
 
 # target to build an object file
 servicemanager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/servicemanager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/servicemanager.cpp.o
 .PHONY : servicemanager.cpp.o
 
 servicemanager.i: servicemanager.cpp.i
@@ -529,7 +529,7 @@ servicemanager.i: servicemanager.cpp.i
 
 # target to preprocess a source file
 servicemanager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/servicemanager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/servicemanager.cpp.i
 .PHONY : servicemanager.cpp.i
 
 servicemanager.s: servicemanager.cpp.s
@@ -537,7 +537,7 @@ servicemanager.s: servicemanager.cpp.s
 
 # target to generate assembly for a file
 servicemanager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/QControl.dir/build.make CMakeFiles/QControl.dir/servicemanager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Qahya.dir/build.make CMakeFiles/Qahya.dir/servicemanager.cpp.s
 .PHONY : servicemanager.cpp.s
 
 # Help Target
@@ -552,22 +552,22 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... QControl_autogen"
-	@echo "... QControl_autogen_timestamp_deps"
-	@echo "... QControl_lrelease"
-	@echo "... QControl_lupdate"
+	@echo "... Qahya_autogen"
+	@echo "... Qahya_autogen_timestamp_deps"
+	@echo "... Qahya_lrelease"
+	@echo "... Qahya_lupdate"
 	@echo "... release_translations"
 	@echo "... update_translations"
-	@echo "... QControl"
-	@echo "... QControl_autogen/mocs_compilation.o"
-	@echo "... QControl_autogen/mocs_compilation.i"
-	@echo "... QControl_autogen/mocs_compilation.s"
+	@echo "... Qahya"
+	@echo "... Qahya_autogen/mocs_compilation.o"
+	@echo "... Qahya_autogen/mocs_compilation.i"
+	@echo "... Qahya_autogen/mocs_compilation.s"
 	@echo "... addruledialog.o"
 	@echo "... addruledialog.i"
 	@echo "... addruledialog.s"
-	@echo "... build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.o"
-	@echo "... build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.i"
-	@echo "... build/Desktop_Debug/.qt/rcc/qrc_QControl_translations.s"
+	@echo "... build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.o"
+	@echo "... build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.i"
+	@echo "... build/Desktop_Debug/.qt/rcc/qrc_Qahya_translations.s"
 	@echo "... connectionmanager.o"
 	@echo "... connectionmanager.i"
 	@echo "... connectionmanager.s"

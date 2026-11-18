@@ -279,7 +279,7 @@ QString FirewallManager::cachePath() const
 {
     // GenericCacheLocation avoids depending on QCoreApplication organization/app names.
     return QStandardPaths::writableLocation(QStandardPaths::GenericCacheLocation)
-           + QStringLiteral("/QControl/ufw-rules.json");
+           + QStringLiteral("/Qahya/ufw-rules.json");
 }
 
 void FirewallManager::saveCache() const

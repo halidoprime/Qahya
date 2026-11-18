@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>QControl</string>
+   <string>Qahya</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -475,7 +475,7 @@
                 <item>
                  <widget class="QPushButton" name="btnScanLocals">
                   <property name="toolTip">
-                   <string>Scan the local network with arp-scan and nmap. Asks for the admin password.</string>
+                    <string>Scan the local network with arp-scan. Asks for the admin password.</string>
                   </property>
                   <property name="text">
                    <string>Scan</string>

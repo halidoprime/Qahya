@@ -15,7 +15,6 @@
 
 namespace {
 const char kArpMarker[] = "@@QCONTROL-ARP-SCAN@@";
-const char kNmapMarker[] = "@@QCONTROL-NMAP@@";
 const char kEndMarker[] = "@@QCONTROL-END@@";
 
 // A routed /19 is about 8190 hosts, which takes many minutes per tool. Partial results are kept on timeout.
@@ -23,16 +22,15 @@ const int kScanTimeoutMs = 600000;
 // After the timeout closes the script's stdin, wait this long for it to stop its tools before killing pkexec.
 const int kStopGraceMs = 15000;
 
-// Runs inside pkexec (root). Every argument after the tool paths is "<interface>=<cidr>".
-// arp-scan and nmap each run once per subnet on that subnet's interface. A failing run does
-// not stop the others. Markers separate the two tools' output. LC_ALL=C keeps output parseable.
+// Runs inside pkexec (root). Every argument after the tool path is "<interface>=<cidr>".
+// arp-scan runs once per subnet on that subnet's interface. LC_ALL=C keeps output parseable.
 //
 // Stop handling: the script copies its stdin, and a watcher waits for it to close. The manager
 // closes that pipe on timeout. The watcher then signals the script, whose trap kills the running
 // tool (its children) and exits. pkill is from procps.
 const char kScanScript[] =
     "LC_ALL=C; export LC_ALL; "
-    "arp=$1; nmap=$2; shift 2; "
+    "arp=$1; shift; "
     "exec 3<&0; "
     "trap 'pkill -TERM -P $$ >/dev/null 2>&1; exit 143' TERM; "
     "( cat <&3 >/dev/null 2>&1; kill -TERM $$ >/dev/null 2>&1 ) & "
@@ -41,11 +39,6 @@ const char kScanScript[] =
     "for spec in \"$@\"; do "
     "  dev=${spec%%=*}; cidr=${spec#*=}; "
     "  if [ -n \"$arp\" ]; then \"$arp\" --interface=\"$dev\" \"$cidr\" & wait $!; fi; "
-    "done; "
-    "echo '@@QCONTROL-NMAP@@'; "
-    "for spec in \"$@\"; do "
-    "  dev=${spec%%=*}; cidr=${spec#*=}; "
-    "  if [ -n \"$nmap\" ]; then \"$nmap\" -sn -T4 -e \"$dev\" \"$cidr\" & wait $!; fi; "
     "done; "
     "echo '@@QCONTROL-END@@'; "
     "kill $watcher >/dev/null 2>&1; "
@@ -112,14 +105,6 @@ QStringList subnetSpecs(const QByteArray &output, LocalDeviceManager::ScanScope 
     return specs;
 }
 
-void addMethod(LocalDeviceInfo &device, const QString &tool)
-{
-    if (device.method.isEmpty())
-        device.method = tool;
-    else if (!device.method.split(QStringLiteral(" + ")).contains(tool))
-        device.method += QStringLiteral(" + ") + tool;
-}
-
 quint32 ipToNumber(const QString &ip)
 {
     quint32 value = 0;
@@ -128,22 +113,16 @@ quint32 ipToNumber(const QString &ip)
     return value;
 }
 
-// Parses the output of arp-scan (tab-separated "IP<TAB>MAC<TAB>vendor") and nmap -sn
-// ("Nmap scan report for host (ip)" followed by an optional "MAC Address: ..." line).
-// Results are merged by IP and sorted numerically.
+// Parses the output of arp-scan (tab-separated "IP<TAB>MAC<TAB>vendor").
+// Results are sorted numerically by IP.
 QVector<LocalDeviceInfo> parseScanOutput(const QByteArray &output)
 {
     static const QRegularExpression ipRe(QStringLiteral("^\\d{1,3}(?:\\.\\d{1,3}){3}$"));
     static const QRegularExpression macRe(QStringLiteral("^[0-9A-Fa-f]{2}(?::[0-9A-Fa-f]{2}){5}$"));
     static const QRegularExpression dupRe(QStringLiteral("\\s*\\(DUP:[^)]*\\)$"));
-    static const QRegularExpression nmapReportRe(
-        QStringLiteral("^Nmap scan report for (.+?)(?: \\((\\d{1,3}(?:\\.\\d{1,3}){3})\\))?$"));
-    static const QRegularExpression nmapMacRe(
-        QStringLiteral("^MAC Address: ([0-9A-Fa-f:]{17})(?: \\((.*)\\))?$"));
 
-    enum class Section { None, Arp, Nmap };
+    enum class Section { None, Arp };
     Section section = Section::None;
-    QString currentNmapIp;
     QHash<QString, LocalDeviceInfo> devices;
 
     const QStringList lines = QString::fromLocal8Bit(output).split(QLatin1Char('\n'), Qt::SkipEmptyParts);
@@ -151,10 +130,6 @@ QVector<LocalDeviceInfo> parseScanOutput(const QByteArray &output)
         const QString trimmed = rawLine.trimmed();
         if (trimmed == QLatin1String(kArpMarker)) {
             section = Section::Arp;
-            continue;
-        }
-        if (trimmed == QLatin1String(kNmapMarker)) {
-            section = Section::Nmap;
             continue;
         }
         if (trimmed == QLatin1String(kEndMarker)) {
@@ -175,37 +150,9 @@ QVector<LocalDeviceInfo> parseScanOutput(const QByteArray &output)
 
             LocalDeviceInfo &device = devices[ip];
             device.ip = ip;
-            if (device.mac.isEmpty())
-                device.mac = mac;
-            if (device.vendor.isEmpty())
-                device.vendor = vendor;
-            addMethod(device, QStringLiteral("arp-scan"));
-        } else if (section == Section::Nmap) {
-            const QRegularExpressionMatch report = nmapReportRe.match(trimmed);
-            if (report.hasMatch()) {
-                const bool hasParenIp = !report.captured(2).isEmpty();
-                const QString ip = hasParenIp ? report.captured(2) : report.captured(1);
-                currentNmapIp.clear();
-                if (!ipRe.match(ip).hasMatch())
-                    continue;
-
-                currentNmapIp = ip;
-                LocalDeviceInfo &device = devices[ip];
-                device.ip = ip;
-                if (hasParenIp && device.hostname.isEmpty())
-                    device.hostname = report.captured(1);
-                addMethod(device, QStringLiteral("nmap"));
-                continue;
-            }
-
-            const QRegularExpressionMatch mac = nmapMacRe.match(trimmed);
-            if (mac.hasMatch() && !currentNmapIp.isEmpty()) {
-                LocalDeviceInfo &device = devices[currentNmapIp];
-                if (device.mac.isEmpty())
-                    device.mac = mac.captured(1);
-                if (device.vendor.isEmpty())
-                    device.vendor = mac.captured(2);
-            }
+            device.mac = mac;
+            device.vendor = vendor;
+            device.method = QStringLiteral("arp-scan");
         }
     }
 
@@ -224,7 +171,6 @@ LocalDeviceManager::LocalDeviceManager(QObject *parent)
     , m_pkexecPath(QStandardPaths::findExecutable(QStringLiteral("pkexec")))
     , m_shPath(QStandardPaths::findExecutable(QStringLiteral("sh")))
     , m_arpScanPath(findTool(QStringLiteral("arp-scan")))
-    , m_nmapPath(findTool(QStringLiteral("nmap")))
     , m_scanTimer(new QTimer(this))
     , m_stopTimer(new QTimer(this))
 {
@@ -232,10 +178,10 @@ LocalDeviceManager::LocalDeviceManager(QObject *parent)
         m_availabilityError = tr("ip could not be found. Local network scanning is unavailable.");
     else if (m_pkexecPath.isEmpty())
         m_availabilityError = tr("pkexec could not be found. Local network scanning is unavailable.");
-    else if (m_arpScanPath.isEmpty() && m_nmapPath.isEmpty())
-        m_availabilityError = tr("Neither arp-scan nor nmap could be found. Install one of them to scan the local network.");
+    else if (m_arpScanPath.isEmpty())
+        m_availabilityError = tr("arp-scan could not be found. Install it to scan the local network.");
 
-    QSettings settings(QStringLiteral("QControl"), QStringLiteral("QControl"));
+    QSettings settings(QStringLiteral("Qahya"), QStringLiteral("Qahya"));
     m_scope = settings.value(QLatin1String(kScopeKey), 0).toInt() == 1 ? ScanScope::Local24
                                                                          : ScanScope::RoutedSubnet;
 
@@ -356,7 +302,7 @@ bool LocalDeviceManager::isScanRunning() const
 bool LocalDeviceManager::canScan() const
 {
     return !m_ipPath.isEmpty() && !m_pkexecPath.isEmpty() && !m_shPath.isEmpty()
-           && (!m_arpScanPath.isEmpty() || !m_nmapPath.isEmpty());
+           && !m_arpScanPath.isEmpty();
 }
 
 QString LocalDeviceManager::availabilityError() const
@@ -379,7 +325,7 @@ void LocalDeviceManager::setScope(ScanScope scope)
     if (scope == m_scope)
         return;
     m_scope = scope;
-    QSettings settings(QStringLiteral("QControl"), QStringLiteral("QControl"));
+    QSettings settings(QStringLiteral("Qahya"), QStringLiteral("Qahya"));
     settings.setValue(QLatin1String(kScopeKey), scope == ScanScope::Local24 ? 1 : 0);
 }
 
@@ -405,10 +351,10 @@ void LocalDeviceManager::scan()
 
 void LocalDeviceManager::startPrivilegedScan(const QStringList &specs)
 {
-    // pkexec sh -c SCRIPT sh <arp-scan> <nmap> <interface=cidr...>
-    // Empty tool paths are passed through and skipped by the script.
+    // pkexec sh -c SCRIPT sh <arp-scan> <interface=cidr...>
+    // Empty tool path is passed through and skipped by the script.
     QStringList args = {m_shPath, QStringLiteral("-c"), QLatin1String(kScanScript), QStringLiteral("sh"),
-                        m_arpScanPath, m_nmapPath};
+                        m_arpScanPath};
     args << specs;
     m_scanProcess.setProgram(m_pkexecPath);
     m_scanProcess.setArguments(args);

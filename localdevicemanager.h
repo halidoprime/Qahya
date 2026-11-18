@@ -14,9 +14,9 @@ struct LocalDeviceInfo
 {
     QString ip;
     QString mac;
-    QString hostname;   // reported by nmap (reverse DNS); empty when unknown
+    QString hostname;   // empty when unknown
     QString vendor;     // MAC vendor (OUI) name; empty when unknown
-    QString method;     // arp-scan, nmap, or "arp-scan + nmap"
+    QString method;     // scan method used
 };
 
 class LocalDeviceManager : public QObject
@@ -43,7 +43,7 @@ public:
     ScanScope scope() const;
     void setScope(ScanScope scope);
 
-    // Scans the local IPv4 subnets with arp-scan and nmap through pkexec. Only called on user request.
+    // Scans the local IPv4 subnets with arp-scan through pkexec. Only called on user request.
     void scan();
 
 signals:
@@ -59,7 +59,6 @@ private:
     QString m_pkexecPath;
     QString m_shPath;
     QString m_arpScanPath;
-    QString m_nmapPath;
     QString m_availabilityError;
     QString m_warnings;
     QProcess m_routeProcess;

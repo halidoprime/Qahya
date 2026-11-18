@@ -91,7 +91,7 @@ MainWindow::MainWindow(QWidget *parent)
                 QLabel *label = ui->criticalStatusLabel;
                 if (!available) {
                     label->setText(tr("Critical service status unavailable"));
-                    label->setToolTip(tr("QControl could not read the systemd service inventory."));
+                    label->setToolTip(tr("Qahya could not read the systemd service inventory."));
                     label->setProperty("state", QStringLiteral("alert"));
                 } else if (allOkay) {
                     label->setText(tr("Everything is fine"));

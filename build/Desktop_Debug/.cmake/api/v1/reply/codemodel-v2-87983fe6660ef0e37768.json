@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-dd5e3feb4d34ecfa40e9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Qahya",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Qahya::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qahya-Debug-f30beb147339939fd5f0.json",
+					"name" : "Qahya",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qahya_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qahya_autogen-Debug-047d08618611596c0f5b.json",
+					"name" : "Qahya_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qahya_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qahya_autogen_timestamp_deps-Debug-9de9a55da5906b6481fe.json",
+					"name" : "Qahya_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qahya_lrelease::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qahya_lrelease-Debug-3226b2448e6eb445bc43.json",
+					"name" : "Qahya_lrelease",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qahya_lupdate::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qahya_lupdate-Debug-a9d36b8f8d7b48b468a6.json",
+					"name" : "Qahya_lupdate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "release_translations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-release_translations-Debug-394e710104756da7becb.json",
+					"name" : "release_translations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "update_translations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-update_translations-Debug-92b4f501dd8776bc81e9.json",
+					"name" : "update_translations",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug",
+		"source" : "/home/halidoprime/Documents/QControl/QControl"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

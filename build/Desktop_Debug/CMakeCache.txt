@@ -185,7 +185,7 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug/.qtcreator/cmake-helper/qtcreator-project.cmake
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=QControl
+CMAKE_PROJECT_NAME:STATIC=Qahya
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/bin/ranlib
@@ -291,15 +291,6 @@ OPENGL_opengl_LIBRARY:FILEPATH=/usr/lib/libOpenGL.so
 //Path to a file.
 OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
 
-//Value Computed by CMake
-QControl_BINARY_DIR:STATIC=/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug
-
-//Value Computed by CMake
-QControl_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-QControl_SOURCE_DIR:STATIC=/home/halidoprime/Documents/QControl/QControl
-
 //Additional directories where find(Qt6 ...) host Qt components
 // are searched
 QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH:STRING=
@@ -321,6 +312,15 @@ QT_ENABLE_QML_DEBUG:BOOL=ON
 
 //No help, variable specified on the command line.
 QT_QMAKE_EXECUTABLE:FILEPATH=/usr/bin/qmake6
+
+//Value Computed by CMake
+Qahya_BINARY_DIR:STATIC=/home/halidoprime/Documents/QControl/QControl/build/Desktop_Debug
+
+//Value Computed by CMake
+Qahya_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Qahya_SOURCE_DIR:STATIC=/home/halidoprime/Documents/QControl/QControl
 
 //The directory containing a CMake configuration file for Qt6Charts.
 Qt6Charts_DIR:PATH=/usr/lib/cmake/Qt6Charts
@@ -654,6 +654,8 @@ QT_FEATURE_charts_scatter_chart:INTERNAL=ON
 QT_FEATURE_charts_spline_chart:INTERNAL=ON
 //Qt feature: checkbox (from target Qt6::Widgets)
 QT_FEATURE_checkbox:INTERNAL=ON
+//Qt feature: clang_module_maps (from target Qt6::Core)
+QT_FEATURE_clang_module_maps:INTERNAL=OFF
 //Qt feature: clipboard (from target Qt6::Gui)
 QT_FEATURE_clipboard:INTERNAL=ON
 //Qt feature: clock_gettime (from target Qt6::Core)
@@ -1038,6 +1040,8 @@ QT_FEATURE_opensslv11:INTERNAL=OFF
 QT_FEATURE_opensslv30:INTERNAL=ON
 //Qt feature: openvg (from target Qt6::Gui)
 QT_FEATURE_openvg:INTERNAL=OFF
+//Qt feature: optimized_tools (from target Qt6::Core)
+QT_FEATURE_optimized_tools:INTERNAL=OFF
 //Qt feature: pcre2 (from target Qt6::Core)
 QT_FEATURE_pcre2:INTERNAL=ON
 //Qt feature: pdf (from target Qt6::Gui)
@@ -1090,6 +1094,8 @@ QT_FEATURE_pthread_condattr_setclock:INTERNAL=ON
 QT_FEATURE_pthread_timedjoin:INTERNAL=ON
 //Qt feature: pushbutton (from target Qt6::Widgets)
 QT_FEATURE_pushbutton:INTERNAL=ON
+//Qt feature: qqnx_eventfd (from target Qt6::Core)
+QT_FEATURE_qqnx_eventfd:INTERNAL=OFF
 //Qt feature: qqnx_imf (from target Qt6::Gui)
 QT_FEATURE_qqnx_imf:INTERNAL=OFF
 //Qt feature: qqnx_pps (from target Qt6::Core)
@@ -1098,6 +1104,10 @@ QT_FEATURE_qqnx_pps:INTERNAL=OFF
 QT_FEATURE_qtgui_threadpool:INTERNAL=ON
 //Qt feature: radiobutton (from target Qt6::Widgets)
 QT_FEATURE_radiobutton:INTERNAL=ON
+//Qt feature: randomgenerator_disable_fallback (from target Qt6::Core)
+QT_FEATURE_randomgenerator_disable_fallback:INTERNAL=OFF
+//Qt feature: rangemodel (from target Qt6::Core)
+QT_FEATURE_rangemodel:INTERNAL=ON
 //Qt feature: raster_64bit (from target Qt6::Gui)
 QT_FEATURE_raster_64bit:INTERNAL=ON
 //Qt feature: raster_fp (from target Qt6::Gui)
@@ -1188,6 +1198,8 @@ QT_FEATURE_stackedwidget:INTERNAL=ON
 QT_FEATURE_standarditemmodel:INTERNAL=ON
 //Qt feature: static (from target Qt6::Core)
 QT_FEATURE_static:INTERNAL=OFF
+//Qt feature: static_compiler_runtime (from target Qt6::Core)
+QT_FEATURE_static_compiler_runtime:INTERNAL=OFF
 //Qt feature: statusbar (from target Qt6::Widgets)
 QT_FEATURE_statusbar:INTERNAL=ON
 //Qt feature: statustip (from target Qt6::Widgets)
@@ -1204,6 +1216,8 @@ QT_FEATURE_style_android:INTERNAL=OFF
 QT_FEATURE_style_fusion:INTERNAL=ON
 //Qt feature: style_mac (from target Qt6::Widgets)
 QT_FEATURE_style_mac:INTERNAL=OFF
+//Qt feature: style_ohos (from target Qt6::Widgets)
+QT_FEATURE_style_ohos:INTERNAL=OFF
 //Qt feature: style_stylesheet (from target Qt6::Widgets)
 QT_FEATURE_style_stylesheet:INTERNAL=ON
 //Qt feature: style_windows (from target Qt6::Widgets)
@@ -1212,6 +1226,8 @@ QT_FEATURE_style_windows:INTERNAL=ON
 QT_FEATURE_style_windows11:INTERNAL=OFF
 //Qt feature: style_windowsvista (from target Qt6::Widgets)
 QT_FEATURE_style_windowsvista:INTERNAL=OFF
+//Qt feature: swift_interop (from target Qt6::Core)
+QT_FEATURE_swift_interop:INTERNAL=OFF
 //Qt feature: syntaxhighlighter (from target Qt6::Widgets)
 QT_FEATURE_syntaxhighlighter:INTERNAL=ON
 //Qt feature: syslog (from target Qt6::Core)
@@ -1256,6 +1272,10 @@ QT_FEATURE_tablewidget:INTERNAL=ON
 QT_FEATURE_tabwidget:INTERNAL=ON
 //Qt feature: temporaryfile (from target Qt6::Core)
 QT_FEATURE_temporaryfile:INTERNAL=ON
+//Qt feature: test_auto (from target Qt6::Core)
+QT_FEATURE_test_auto:INTERNAL=ON
+//Qt feature: test_baseline (from target Qt6::Core)
+QT_FEATURE_test_baseline:INTERNAL=OFF
 //Qt feature: test_gui (from target Qt6::Core)
 QT_FEATURE_test_gui:INTERNAL=ON
 //Qt feature: test_squish (from target Qt6::Core)
@@ -1394,6 +1414,8 @@ QT_FEATURE_widgets:INTERNAL=ON
 QT_FEATURE_widgettextcontrol:INTERNAL=ON
 //Qt feature: windows_ioring (from target Qt6::Core)
 QT_FEATURE_windows_ioring:INTERNAL=OFF
+//Qt feature: windows_ioring_runtime (from target Qt6::Core)
+QT_FEATURE_windows_ioring_runtime:INTERNAL=OFF
 //Qt feature: windows_ioring_skip_builder_param_checks (from target
 // Qt6::Core)
 QT_FEATURE_windows_ioring_skip_builder_param_checks:INTERNAL=OFF
@@ -1415,6 +1437,8 @@ QT_FEATURE_xcb_glx_plugin:INTERNAL=ON
 QT_FEATURE_xcb_sm:INTERNAL=ON
 //Qt feature: xcb_xlib (from target Qt6::Gui)
 QT_FEATURE_xcb_xlib:INTERNAL=ON
+//Qt feature: xdg_desktop_portal_file_transfer (from target Qt6::Gui)
+QT_FEATURE_xdg_desktop_portal_file_transfer:INTERNAL=ON
 //Qt feature: xkbcommon (from target Qt6::Gui)
 QT_FEATURE_xkbcommon:INTERNAL=ON
 //Qt feature: xkbcommon_x11 (from target Qt6::Gui)
